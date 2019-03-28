@@ -15,7 +15,7 @@ https://github.com/amandat85/LIRI-Node-Application
  ## Setup Files
  To use LIRI you will need install and create certain files to get it to run.
 
- 1. Clone/download the repository for the following github page: https://github.com/amandat85/LIRI-Node-Inquirer.
+ 1. Clone/download the repository for the following github page: https://github.com/amandat85/LIRI-Node-Application.
  2. Create a .gitignore file. In this .gitignore file add the following file names:
     ```
     .DS_Store
@@ -52,22 +52,33 @@ You should now be ready to run the application.
 1. The application allows you to search information about movies, songs, bands/artists and also holds a surprise search.
 2. Open up your terminal
 3. Navigate to your LIRI-Node-Application directory
-4. To search movies type in the following command:
+
+### To Search a Movie
+
+To search movies type in the following command:
 ```
 node liri.js movie-this <name of movie here>
 ```
-5.  If you enter nothing, the application will automatically search for the movie "Mr. Nobody."
-6. To search bands/artists, type in the following command:
+If you enter nothing, the application will automatically search for the movie "Mr. Nobody."
+
+### To Search a band or artist
+
+To search bands/artists, type in the following command:
 ```
-node liri.js concert-this <name of band/artist>
+node liri.js concert-this <name of band/artist here>
 ```
 
-7. To searchsongs, type in the following command:
+### To Search a song
+
+To search songs, type in the following command:
 ```
-node liri.js spotify-this-song <song name>
+node liri.js spotify-this-song <song name here>
 ```
-8. If you do not enter anything, the application will search for "The Sign," by Ace of Base.
-9. To search the surprise search parameters, repeat `step 4` and then type the command:
+If you do not enter anything, the application will search for "The Sign," by Ace of Base.
+
+### Surprise Search
+
+To search the surprise search parameters, repeat `step 4` and then type the command:
 ```
 node liri.js do-what-it-says
 ```
