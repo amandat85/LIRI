@@ -49,6 +49,9 @@ https://github.com/amandat85/LIRI-Node-Application
 You should now be ready to run the application.
 
 ## How it works
+
+Please watch this video demo of the application: https://drive.google.com/file/d/1UbouArFy36TPcbJ5cSQLf5R0soHEaowv/view?usp=sharing
+
 1. The application allows you to search information about movies, songs, bands/artists and also holds a surprise search.
 2. Open up your terminal
 3. Navigate to your LIRI-Node-Application directory
@@ -82,8 +85,6 @@ To search the surprise search parameters, type the command:
 ```
 node liri.js do-what-it-says
 ```
-Please watch this video demo: https://drive.google.com/file/d/1UbouArFy36TPcbJ5cSQLf5R0soHEaowv/view?usp=sharing
-
 Enjoy!
 
 ## License
