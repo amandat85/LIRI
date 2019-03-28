@@ -52,28 +52,24 @@ You should now be ready to run the application.
 1. The application allows you to search information about movies, songs, bands/artists and also holds a surprise search.
 2. Open up your terminal
 3. Navigate to your LIRI-Node-Application directory
-4. Once there, type in the following command:
+4. To search movies type in the following command:
 ```
-node liri.js
+node liri.js movie-this <name of movie here>
 ```
-4. To search movies, type in the following command after the above command:
+5.  If you enter nothing, the application will automatically search for the movie "Mr. Nobody."
+6. To search bands/artists, type in the following command:
 ```
-movie-this
+node liri.js concert-this <name of band/artist>
 ```
-5. After you typed in the above command type in the name of the movie you would like information about and hit enter. If you enter nothing, the application will automatically search for the movie "Mr. Nobody."
-6. To search bands/artists, repeat `step 4` followed by:
+
+7. To searchsongs, type in the following command:
 ```
-concert-this
+node liri.js spotify-this-song <song name>
 ```
-7. After you typed in the above command type in the name of a band or artist you would like tour information about and hit enter.
-8. To search bands/artists, repeat `step 4` followed by:
+8. If you do not enter anything, the application will search for "The Sign," by Ace of Base.
+9. To search the surprise search parameters, repeat `step 4` and then type the command:
 ```
-spotify-this-song
-```
-9.  After you typed in the above command type in the name song you would like information about and hit enter. If you do not enter anything, the application will search for "The Sign," by Ace of Base.
-10. To search the surprise search parameters, repeat `step 4` and then type the command:
-```
-do-what-it-says
+node liri.js do-what-it-says
 ```
 Please watch this video demo: https://drive.google.com/file/d/1UbouArFy36TPcbJ5cSQLf5R0soHEaowv/view?usp=sharing
 
