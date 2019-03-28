@@ -78,7 +78,7 @@ If you do not enter anything, the application will search for "The Sign," by Ace
 
 ### Surprise Search
 
-To search the surprise search parameters, repeat `step 4` and then type the command:
+To search the surprise search parameters, type the command:
 ```
 node liri.js do-what-it-says
 ```
