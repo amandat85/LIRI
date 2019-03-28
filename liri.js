@@ -1,20 +1,16 @@
-//Get the dotenv node modules
+//REQUIRE =========================================================================================================================
 require("dotenv").config();
-
-//Require keys that store spotify keys from .env
 const keys = require("./keys.js");
 let Spotify = require("node-spotify-api");
-let spotify = new Spotify(keys.spotify);//What is this?
+let spotify = new Spotify(keys.spotify);
 let axios = require("axios");
 let moment = require("moment");
 let fs = require("fs");
+//VARIABLES =========================================================================================================================
+let command = process.argv[2];
+let search = process.argv.slice(3).join(" ");
 
-let command = process.argv[2];//concert-this, spotify-this-song, movie-this, do-what-it-say - use inquirer
-let search = process.argv.slice(3).join(" ") //what the user is searching, make subarray for search parameters entered using slice
-// let search = searchTerm.replace(/'/g, "A"); //need to be a function
-// console.log(search);
-
-//BANDS IN TOWN SEARCH ===========================================================================
+//BANDS IN TOWN SEARCH ==============================================================================================================
 let bandSearch = (search) => {
 	axios.get("https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp")
 		.then(function (response) {
@@ -32,9 +28,9 @@ let bandSearch = (search) => {
 		});
 }
 
-//SPOTIFY SEARCH ============================================================================
+//SPOTIFY SEARCH ==============================================================================================================
 let spotifySearch = (search) => {
-	if (!search){
+	if (!search) {
 		search = "The Sign:Ace of Base";
 	}
 	spotify.search({
@@ -54,10 +50,9 @@ let spotifySearch = (search) => {
 	});
 }
 
-//replace ' with backslash and character /replace function
-//OMDB SEARCH
+//OMDB SEARCH ================================================================================================================
 let movieSearch = (search) => {
-	if (!search){
+	if (!search) {
 		search = "Mr. Nobody"
 	}
 	axios.get("http://www.omdbapi.com/?t=" + search + "&y=&plot=short&apikey=trilogy")
@@ -88,18 +83,16 @@ let doWhatItSay = () => {
 		spotifySearch(dataArr[1])
 	})
 }
-
+//LOG TEXT ==================================================================================================================
 let logText = () => {
-	fs.appendFile("log.txt", search + ", ", function(err){
+	fs.appendFile("log.txt", search + ", ", function (err) {
 		if (err) {
 			console.log(err);
 		}
-		else {
-			console.log("Content Added!");
-		}
-	}) 	
+	})
 }
 logText();
+
 //SWITCH STATEMENTS ==========================================================================
 switch (command) {
 	case "concert-this":
