@@ -86,4 +86,7 @@ Please watch this video demo: https://drive.google.com/file/d/1UbouArFy36TPcbJ5c
 
 Enjoy!
 
+## License
+MIT
+
 
