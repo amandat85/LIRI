@@ -14,7 +14,7 @@ let search = process.argv.slice(3).join(" ");
 let bandSearch = (search) => {
 	axios.get("https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp")
 		.then(function (response) {
-			for (var i = 0; i < response.data.length; i++) {
+			for (var i = 0; i < 5; i++) {
 				let concertResults = "--------------------------------------------------------------------" +
 					"\nVenue Name: " + response.data[i].venue.name +
 					"\nVenue Location: " + response.data[i].venue.city +

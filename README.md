@@ -56,6 +56,8 @@ Please watch this video demo of the application: https://drive.google.com/file/d
 2. Open up your terminal
 3. Navigate to your LIRI-Node-Application directory
 
+Note: If your search terms have an `apostrophe (')` in the phrase please put the phrase in quotation marks. Example: "God's Plan"
+
 ### To Search a Movie
 
 To search movies type in the following command:
