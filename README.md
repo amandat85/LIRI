@@ -4,6 +4,9 @@
 ## Repository 
 https://github.com/amandat85/LIRI-Node-Application
 
+## Homework Details
+[Homework Details](homework_instructions.md)
+
 ## Languages, Tools and Techologies
 * JavaScript
 * Node.js
